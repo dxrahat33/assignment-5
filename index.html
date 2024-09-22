@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment - 5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-5xl font-bold text-red-500">hello Daisy khala</h1>
+    
+<!-- START main top navbar section -->
+    <header class="fixed top-0 left-0 w-full bg-[#F9F7F3] z-50">
+        <div class="flex justify-around pt-4 pb-6 px-2">
+            <div><button class="btn btn-success md:text-xl main-font font-semibold bg-[#B4F461] border-none hover:text-white">Blog</button></div>
+            <div class="font-semibold font-main md:text-xl flex items-center gap-3"><img class="hidden md:block" src="assets/logo.png" alt="">Donate Bangladesh</div>
+            <div class="flex items-center gap-3 font-main font-semibold md:text-xl text-gray-400"><img src="assets/coin.png" alt="">14500<span class="text-gray-400">BDT</span></div>
+        </div>
+    </header>
+    <div class="h-16"></div> 
+<!-- END main top navbar section -->
+
+<!-- START Second navbar -->
+    <header class="fixed top-20 left-0 w-full backdrop-blur-lg bg-white/20 text-black z-40">
+        <nav class="max-w-5xl mx-auto flex items-center justify-center py-4 gap-4">
+            <div class=""><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button></div>
+            <div class=""><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button></div>
+        </nav>
+    </header>
+    <div class="h-32"></div>
+<!-- END Second navbar -->
+
+
 
 
     <script src="js/script.js"></script>
