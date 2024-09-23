@@ -49,40 +49,60 @@
         <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              What is the DOM in JavaScript, and how does it relate to forms?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>The DOM (Document Object Model) is an interface that represents the structure of an HTML document. It allows JavaScript to access and manipulate HTML elements dynamically. Forms in the DOM can be accessed and controlled using JavaScript methods, enabling actions like getting input values, validating forms, and responding to user interactions.</p>
             </div>
           </div>
       
           <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              How do you get the value of an input field in a form using JavaScript?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>To get the value of an input field in a form, you can use the value property of the input element. For example: <br>
+                "let inputValue = document.getElementById('inputId').value;" <br>
+                In this example, the getElementById() method is used to select the input field by its id, and then the value property retrieves its current value.
+              </p>
             </div>
           </div>
       
           <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              How do you prevent a form from submitting when a certain condition is not met?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>To prevent a form from submitting, you can use the event.preventDefault() method inside an event listener for the form’s submit event. For example: <br>
+              "document.getElementById('formId').addEventListener('submit', function(event) {
+                let inputValue = document.getElementById('inputId').value;
+                if (inputValue === '') {
+                  event.preventDefault(); // Prevents form submission
+                  alert('Input cannot be empty.');
+                }
+              });"
+            <br>
+            This will stop the form submission if the input field is empty and display an alert message.</p>
             </div>
           </div>
       
           <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              How can you dynamically add input fields to a form using JavaScript?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>You can dynamically add input fields to a form by creating new elements and appending them to the form using the DOM. For example: <br>
+
+                
+                let form = document.getElementById('formId'); <br>
+                let newInput = document.createElement('input'); <br>
+                newInput.type = 'text'; <br>
+                newInput.name = 'newField'; <br>
+                form.appendChild(newInput); <br>
+                This script creates a new text input field and appends it to the form with the ID formId.</p>
             </div>
           </div>
     </div>
