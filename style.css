@@ -9,3 +9,8 @@
     font-family: "Lexend", sans-serif;
     font-weight: 400;
 }
+.active{
+    background-color: #B4F461;
+    border: none;
+    transition: all ease 0.2s;
+}
