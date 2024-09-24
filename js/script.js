@@ -1,5 +1,5 @@
 document.getElementById('btn-blog').addEventListener('click', function () {
-    window.location.href = '../src/blog.html';
+    window.location.href = './src/blog.html';
 })
 
 
@@ -38,3 +38,11 @@ document.getElementById('btn-donate-1').addEventListener('click', function (even
     document.getElementById('account-balance').innerText = newBalance;
     my_modal_5.showModal()
 });
+
+// second donate from button function
+document.getElementById('btn-donate-2').addEventListener('click', function(event){
+    event.preventDefault();
+    console.log('button')
+    const balance = getTextValue('account-balance');
+    console.log(balance);
+})
