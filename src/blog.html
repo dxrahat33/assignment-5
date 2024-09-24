@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -28,13 +29,11 @@
           <img class="hidden md:block" src="../assets/logo.png" alt="" />Donate
           Bangladesh
         </div>
-        <div
-          class="flex items-center gap-3 font-main font-semibold md:text-xl text-gray-400"
-        >
-          <img src="../assets/coin.png" alt="" />14500<span class="text-gray-400"
-            >BDT</span
-          >
-        </div>
+        <div class="flex items-center justify-center gap-2">
+          <img src="../assets/coin.png" alt="">
+          <h1 id="account-balance" class="text-xl font-bold">14500</h1>
+          <h1 class="text-xl font-bold">BDT</h1>
+      </div>
       </div>
     </header>
     <div class="h-16"></div>
@@ -42,29 +41,27 @@
 <br>
 <br>
 <!-- START some heading -->
-    <h1 class="ml-6 text-3xl md:text-5xl font-bold mb-12">Important FAQ</h1>
+    <h1 class="ml-12 text-3xl md:text-5xl font-bold mb-12">Important FAQ <span> </span><i class="fa-regular fa-circle-question"></i></h1> 
 <!-- END some heading -->
     <!-- START accordion -->
     <div class="mx-4 md:mx-8 lg:mx-10">
         <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              What is the DOM in JavaScript, and how does it relate to forms?
+              a). What is the Document Object Model (DOM)?
             </div>
             <div class="collapse-content">
-              <p>The DOM (Document Object Model) is an interface that represents the structure of an HTML document. It allows JavaScript to access and manipulate HTML elements dynamically. Forms in the DOM can be accessed and controlled using JavaScript methods, enabling actions like getting input values, validating forms, and responding to user interactions.</p>
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, with each node representing parts of the document such as elements, attributes, and text.</p>
             </div>
           </div>
       
           <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              How do you get the value of an input field in a form using JavaScript?
+              b). How do you select an element from the DOM?
             </div>
             <div class="collapse-content">
-              <p>To get the value of an input field in a form, you can use the value property of the input element. For example: <br>
-                "let inputValue = document.getElementById('inputId').value;" <br>
-                In this example, the getElementById() method is used to select the input field by its id, and then the value property retrieves its current value.
+              <p>To select an element from the DOM, you can use methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), or querySelectorAll(). These methods allow you to target elements by their id, class, tag, or CSS selectors.
               </p>
             </div>
           </div>
@@ -72,37 +69,20 @@
           <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              How do you prevent a form from submitting when a certain condition is not met?
+              c). What is event delegation in the context of the DOM, and why is it useful?
             </div>
             <div class="collapse-content">
-              <p>To prevent a form from submitting, you can use the event.preventDefault() method inside an event listener for the form’s submit event. For example: <br>
-              "document.getElementById('formId').addEventListener('submit', function(event) {
-                let inputValue = document.getElementById('inputId').value;
-                if (inputValue === '') {
-                  event.preventDefault(); // Prevents form submission
-                  alert('Input cannot be empty.');
-                }
-              });"
-            <br>
-            This will stop the form submission if the input field is empty and display an alert message.</p>
+              <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events on its child elements, rather than attaching individual event listeners to each child. This works because of event bubbling, where events triggered on child elements propagate (or "bubble up") to their parent elements.</p>
             </div>
           </div>
       
           <div class="collapse collapse-arrow bg-base-200 mt-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              How can you dynamically add input fields to a form using JavaScript?
+              d). How do you manipulate an element's attributes and styles using the DOM?
             </div>
             <div class="collapse-content">
-              <p>You can dynamically add input fields to a form by creating new elements and appending them to the form using the DOM. For example: <br>
-
-                
-                let form = document.getElementById('formId'); <br>
-                let newInput = document.createElement('input'); <br>
-                newInput.type = 'text'; <br>
-                newInput.name = 'newField'; <br>
-                form.appendChild(newInput); <br>
-                This script creates a new text input field and appends it to the form with the ID formId.</p>
+              <p>To manipulate an element's attributes in the DOM, you can use methods like getAttribute() to retrieve an attribute, setAttribute() to change or add an attribute, and removeAttribute() to delete an attribute. For manipulating styles, you can access the style property of the element to change individual CSS properties or use cssText to set multiple styles at once. This allows for dynamic adjustments to elements on a webpage.</p>
             </div>
           </div>
     </div>
