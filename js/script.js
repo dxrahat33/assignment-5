@@ -1,5 +1,9 @@
 document.getElementById('btn-blog').addEventListener('click', function () {
+<<<<<<< HEAD
     window.location.href = './src/blog.html';
+=======
+    window.location.href = 'blob/main/src/blog.html';
+>>>>>>> 99d8664fc91957cf03dad23101083a15456c7146
 })
 
 
