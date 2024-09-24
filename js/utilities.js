@@ -1,3 +1,9 @@
+
+document.getElementById('btn-home').addEventListener('click', function(){
+    window.location.href = './index.html';
+})
+
+
 function getButtonInfo(id) {
     const btn1 = document.getElementById(id);
     return btn1;
