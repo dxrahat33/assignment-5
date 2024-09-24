@@ -61,7 +61,7 @@
     <!-- END Second navbar -->
 
     <!-- START main section -->
-    <main class="max-w-6xl mx-auto space-y-8">
+    <main id="donation-section" class="max-w-6xl mx-auto space-y-8">
       <!-- 1st card -->
       <section
         class="flex flex-col md:flex-row justify-between p-8 border rounded-xl md:gap-4"
@@ -80,7 +80,7 @@
             <span class="text-xl font-bold">BDT</span>
           </div>
           <div>
-            <h1 class="text-xl font-bold mb-3">
+            <h1 id="first-donate-title" class="text-xl font-bold mb-3">
               Donate for Flood at Noakhali, Bangladesh
             </h1>
           </div>
@@ -96,7 +96,7 @@
           </div>
           <div>
             <input
-              id="input-donate-1"
+              id="input-donate1"
               type="text"
               min="1"
               placeholder="Write Donation Amount"
@@ -129,11 +129,11 @@
             class="flex gap-2 p-2 bg-gray-300 w-full md:w-2/4 lg:w-2/5 items-center justify-center rounded-xl mb-4"
           >
             <img src="assets/coin.png" alt="" />
-            <h6 id="" class="text-xl font-bold">0</h6>
+            <h6 id="second-donate-balance" class="text-xl font-bold">900</h6>
             <span class="text-xl font-bold">BDT</span>
           </div>
           <div>
-            <h1 class="text-xl font-bold mb-3">
+            <h1 id="second-donate-title" class="text-xl font-bold mb-3">
               Donate for Flood Relief in Feni,Bangladesh
             </h1>
           </div>
@@ -150,8 +150,9 @@
             </p>
           </div>
           <div>
-            <input
+            <input id="input-donate-2"
               type="text"
+              min="1"
               placeholder="Write Donation Amount"
               class="my-4 input input-bordered w-full"
             />
@@ -182,11 +183,11 @@
             class="flex gap-2 p-2 bg-gray-300 w-full md:w-2/4 lg:w-2/5 items-center justify-center rounded-xl mb-4"
           >
             <img src="assets/coin.png" alt="" />
-            <h6 class="text-xl font-bold">0</h6>
+            <h6 id="third-donate-balance" class="text-xl font-bold">1000</h6>
             <span class="text-xl font-bold">BDT</span>
           </div>
           <div>
-            <h1 class="text-xl font-bold mb-3">
+            <h1 id="third-donate-title" class="text-xl font-bold mb-3">
               Aid for Injured in the Quota Movement
             </h1>
           </div>
@@ -204,8 +205,10 @@
             </p>
           </div>
           <div>
-            <input
+            <input 
+              id="input-donate-3"
               type="text"
+              min="1"
               placeholder="Write Donation Amount"
               class="my-4 input input-bordered w-full"
             />
@@ -225,7 +228,7 @@
       <!-- modal -->
 
             <!-- Open the modal using ID.showModal() method -->
-        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+        <button class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="flex flex-col modal-box items-center">
                 <h3 class="text-lg lg:text-4xl font-bold mb-4">Congrates!</h3>
@@ -243,6 +246,15 @@
 
     </main>
     <!-- END main section -->
+
+
+    <!-- History section -->
+    <section id="history-section" class="w-10/12 mx-auto space-y-4">
+
+      
+    </section>
+
+
 
     <script src="js/utilities.js"></script>
     <script src="js/script.js"></script>
